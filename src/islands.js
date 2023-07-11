@@ -1,27 +1,30 @@
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    centeredSlides: true,
-    autoplay: {
-      delay: 7500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      640: {
-        slidesPerView: 2,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-  
+
+// DARK MODE AND LIGHT MODE START
+const dayNight = document.querySelector(".day-night")
+dayNight.addEventListener("click", () =>{
+    dayNight.querySelector("i").classList.toggle("fa-sun")
+    dayNight.querySelector("i").classList.toggle("fa-moon")
+    document.body.classList.toggle("dark")
+})
+
+window.addEventListener("load", ()=>{
+  if(document.body.classList.contains("dark")){
+      dayNight.querySelector("i").classList.add("fa-sun")
+  }else {
+      dayNight.querySelector("i").classList.add("fa-moon")
+  }
+})
+// DARK MODE AND LIGHT MODE END
+
+
+
+window.addEventListener("load", ()=>{
+    if(document.body.classList.contains("dark")){
+        dayNight.querySelector("i").classList.add("fa-sun")
+    }else {
+        dayNight.querySelector("i").classList.add("fa-moon")
+    }
+})
 
 
 
@@ -114,25 +117,6 @@ btn_orderElm.addEventListener('click',  (e) => {
 
     e.preventDefault()
 })
-  
-
-
-// btn_orderElm = addEventListener('click', (e) => {
-//     console.log("Halooooo")
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Checkout JS End
 
 

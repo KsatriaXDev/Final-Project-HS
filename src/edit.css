@@ -1,4 +1,4 @@
-/* main .rounded-full{
+ main .rounded-full{
     list-style: none;
 
 }
@@ -25,5 +25,4 @@ main .rounded-full li ul.dropdown{
 
 main .rounded-full li a:hover ul.dropdown{
     display: block;
-} */
-
+}
