@@ -28,7 +28,10 @@ main .rounded-full li a:hover ul.dropdown{
 }
 
 
-
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
 
 
 
