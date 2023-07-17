@@ -1,552 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GlobeTix</title>
 
-    <!-- CDN FILES -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlobeTix</title>
 
-    <!--  CSS FILES -->
-    <link rel="stylesheet" href="dist/styles.css" />
-    <link rel="stylesheet" href="/src/edit.css">
-    <link rel="stylesheet" href="/src/style-switcher.css">
-  </head>
-  <body>
-    <nav
-      class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800"
-    >
-      <div
-        class="container flex flex-wrap items-center justify-between mx-auto my-2"
-      >
-        <a href="index.html" class="flex items-center">
-          <div>GlobeTix</div>
-          <!-- <img
-            src="img/logo.svg"
-            class="h-8 ml-3 sm:ml-0 sm:h-8"
-            alt="Flowbite Logo"
-          /> -->
-        </a>
-        <div class="md:order-2">
-          <a
-            href="login.html"
-            class="px-8 py-3 mt-2 mr-2 text-base font-medium text-black bg-gray-200 border border-transparent rounded-full hover:bg-gray-300 md:py-2 md:text-sm md:px-8 hover:shadow"
-          >
-            Sign In
-          </a>
-          <a
-            href="register.html"
-            class="px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-navy hover:bg-navy md:py-2 md:text-sm md:px-8 hover:shadow"
-          >
-            Sign Up
-          </a>
-        </>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="mobile-menu-2"
-        >
-          <ul
-            class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular"
-          >
+  <!-- CDN FILES -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.4/dist/flowbite.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!--  CSS FILES -->
+  <link rel="stylesheet" href="dist/styles.css" />
+  <link rel="stylesheet" href="/src/edit.css">
+  <link rel="stylesheet" href="/src/style-switcher.css">
+</head>
+
+<body>
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+    <div class="container flex flex-wrap items-center justify-between mx-auto my-2">
+      <a href="index.html" class="flex items-center">
+        <div>GlobeTix</div>
+      </a>
+      <div class="md:order-2">
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-regular">
             <li>
-              <a
-                href="#"
+              <a href="#"
                 class="block py-2 pl-3 pr-4 text-white bg-indigo-600 rounded md:bg-transparent md:text-indigo-600 md:p-0 dark:text-white"
-                aria-current="page"
-                >Home</a
-              >
+                aria-current="page">Home</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Categories</a
-              >
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Categories</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Pricing</a
-              >
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
             </li>
             <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Study Case</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Study Case</a
-              >
+              <a href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-indigo-600 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Study
+                Case</a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
 
-    <div class="relative overflow-hidden bg-white dark:bg-gray-900">
-      <div class="mx-auto max-w-7xl"> 
-        <div
-          class="z-10 px-5 pb-8 bg-white xl:pl-20 lg:pl-16 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
-        >
-          <main
-            class="mx-auto mt-10 max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-36"
-          >
-            <div class="sm:text-center lg:text-left">
-              <h1
-                class="text-3xl font-bold leading-normal tracking-tight text-gray-900 sm:text-4xl md:text-5xl"
-              >
-                <span class="block lg:mb-2">Welcome </span>
-                <span class="block">To Jawa Island</span>
-              </h1>
-              <p
-                class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              >
-                Choose your destination in jawa island 
-                <span class="block lg:mb-1"></span> you want to go !
-              </p>
-              <div
-                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-              >
-   
-                  </a>
-                </div>
+  </nav>
+  <div class="relative overflow-hidden bg-white">
+    <div class="mx-auto max-w-7xl">
+      <div class="z-10 px-5 pb-8 bg-white xl:pl-20 lg:pl-16 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <main class="mx-auto mt-10 max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-36">
+          <div class="sm:text-center lg:text-left">
+            <h1 class="text-3xl font-bold leading-normal tracking-tight text-gray-900 sm:text-4xl md:text-5xl">
+              <span class="block lg:mb-2">Welcome</span>
+              <span class="block">To Jawa Island</span>
+            </h1>
+            <p
+              class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              Choose your destination in jawa island
+              <span class="block lg:mb-1"></span> of ready-to-use design projects.
+            </p>
+            <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 rounded-full focus:outline-none focus:ring-blue-300 font-medium text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">Choose your destination <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 4 4 4-4" />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div id="dropdownHover"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Jawa</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bali</a>
+                  </li>
+                </ul>
+
               </div>
+
             </div>
-          </main>
-        </div>
-      </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-2/3 ">
-        <img class="w-full lg:w-1/2 lg:mt-12 pl-40 pt-10 ml-40 " src="img/HomeImage.JPG" alt="" />
+          </div>
+        </main>
       </div>
     </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <img class="w-full lg:w-3/4 lg:mt-8" src="img/hero-image.png" alt="" />
+    </div>
+  </div>
 
-
-
-
-
-
-
-    <!-- TOP CATEGORIES START -->
-
-
-
-    <div class="container px-4 mx-auto my-16 md:px-12">
-      <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">Top Destination</h2>
-      <div class="flex flex-wrap -mx-1 lg:-mx-4 review-slider">
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="monas.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="/img/Monas1.png"
-                />
-              </div>
-            </a>
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="monas.html">
-                  Monumen Nasional, DKI Jakarta
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                731 items
-              </span>
-            </header>
-          </div>
-        </div>
-
-
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="/img/Borobudur1.jpeg"
-                />
-              </div>
-            </a>
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="borobudur.html">
-                  Candi Borobudur, Yogyakarta
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                657 items
-              </span>
-            </header>
-          </div>
-        </div>
-
-
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/categories-3.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Icon Set
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                83,559 items
-              </span>
-            </header>
-          </div>
-        </div>
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/categories-4.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Website UI Kit
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                4,500 items
-              </span>
-            </header>
-          </div>
+  <!-- TOP CATEGORIES START -->
+  <div class="container px-4 mx-auto my-16 md:px-12">
+    <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">Top Destination</h2>
+    <div class="flex flex-wrap -mx-1 lg:-mx-4 review-slider">
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="monas.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="/img/Monas1.png" />
+            </div>
+          </a>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="monas.html">
+                Monumen Nasional, DKI Jakarta
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              731 items
+            </span>
+          </header>
         </div>
       </div>
-    </div>
-    <!-- TOP CATEGORIES END -->
-
-
-
-
-    
-  <!-- DISCOUNT START -->
-    <div class="container px-4 mx-auto my-16 md:px-12">
-      <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">Discount</h2>
-      <div class="flex flex-wrap -mx-1 lg:-mx-4">
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/items-1.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Mobile UI Kit
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                Mobile UI Kit
-              </span>
-            </header>
-          </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="/img/Borobudur1.jpeg" />
+            </div>
+          </a>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="borobudur.html">
+                Candi Borobudur, Yogyakarta
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              657 items
+            </span>
+          </header>
         </div>
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/items-2.jpg"
-                />
-              </div>
-            </a>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-3.jpg" />
+            </div>
+          </a>
 
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Online Doctor Consultation
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Icon Set
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              83,559 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-4.jpg" />
+            </div>
+          </a>
+
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
                 Website UI Kit
-              </span>
-            </header>
-          </div>
-        </div>
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/items-3.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Banking Crypto
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                Mobile UI Kit
-              </span>
-            </header>
-          </div>
-        </div>
-      </div>
-    </div> 
-    <!-- DISCOUNT END -->
-
-
-
-
-  
-    <!-- NEW DESTINATION START -->
-
-
-
-    <div class="container px-4 mx-auto my-16 md:px-12">
-      <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">New Destination</h2>
-      <div class="flex flex-wrap -mx-1 lg:-mx-4">
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="monas.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="/img/Monas1.png"
-                />
-              </div>
-            </a>
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="monas.html">
-                  Monumen Nasional, DKI Jakarta
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                731 items
-              </span>
-            </header>
-          </div>
-        </div>
-
-
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="/img/Borobudur1.jpeg"
-                />
-              </div>
-            </a>
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="borobudur.html">
-                  Candi Borobudur, Yogyakarta
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                657 items
-              </span>
-            </header>
-          </div>
-        </div>
-
-
-
-
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/categories-3.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Icon Set
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                83,559 items
-              </span>
-            </header>
-          </div>
-        </div>
-        <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
-          <div class="overflow-hidden border border-gray-200 rounded-xl">
-            <a href="details.html">
-              <div class="m-4 overflow-hidden rounded-xl">
-                <img
-                  alt="Placeholder"
-                  class="block w-full h-auto"
-                  src="img/categories-4.jpg"
-                />
-              </div>
-            </a>
-
-            <header
-              class="px-4 mb-4 leading-tight"
-            >
-              <h1 class="text-lg">
-                <a class="font-semibold text-black no-underline hover:underline" href="#">
-                  Website UI Kit
-                </a>
-              </h1>
-              <span class="block text-sm font-light text-gray-500 no-underline">
-                4,500 items
-              </span>
-            </header>
-          </div>
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              4,500 items
+            </span>
+          </header>
         </div>
       </div>
     </div>
-    <!-- NEW DESTINATION END -->
+  </div>
+  <!-- TOP CATEGORIES END -->
 
+  <!-- DISCOUNT START -->
+  <div class="container px-4 mx-auto my-16 md:px-12">
+    <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">Discount</h2>
+    <div class="flex flex-wrap -mx-1 lg:-mx-4">
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/items-1.jpg" />
+            </div>
+          </a>
 
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Mobile UI Kit
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              Mobile UI Kit
+            </span>
+          </header>
+        </div>
+      </div>
 
+      
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/items-2.jpg" />
+            </div>
+          </a>
+
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Online Doctor Consultation
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              Website UI Kit
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/items-3.jpg" />
+            </div>
+          </a>
+
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Banking Crypto
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              Mobile UI Kit
+            </span>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DISCOUNT END -->
     
 
-
-
-
-
+  <!-- CAROUSEL -->
+  <div class="container px-4 mx-auto my-16 md:px-12">
     <div id="controls-carousel" class="relative w-full" data-carousel="static">
       <!-- Carousel wrapper -->
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-
-        
-
-           <!-- Item 1 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="/img/Borobudur1.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 2 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-              <img src="/img/Borobudur2.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-          <!-- Item 3 -->
-          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img src="/img/Borobudur3.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-          </div>
-
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/img/Borobudur1.jpeg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="/img/Borobudur2.jpeg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="/img/Borobudur1.jpeg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="/img/Borobudur2.jpeg"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
       </div>
+
       <!-- Slider controls -->
-      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-              </svg>
-              <span class="sr-only">Previous</span>
-          </span>
+      <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
       </button>
-      <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-              </svg>
-              <span class="sr-only">Next</span>
-          </span>
+      <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
       </button>
+    </div>
   </div>
-  
 
+  <!-- NEW DESTINATION START -->
+  <div class="container px-4 mx-auto my-16 md:px-12">
+    <h2 class="mb-4 text-xl font-medium md:mb-0 md:text-lg">New Destination</h2>
+    <div class="flex flex-wrap -mx-1 lg:-mx-4 review-slider">
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="monas.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="/img/Monas1.png" />
+            </div>
+          </a>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="monas.html">
+                Monumen Nasional, DKI Jakarta
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              731 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="/img/Borobudur1.jpeg" />
+            </div>
+          </a>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="borobudur.html">
+                Candi Borobudur, Yogyakarta
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              657 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-3.jpg" />
+            </div>
+          </a>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Icon Set
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              83,559 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-4.jpg" />
+            </div>
+          </a>
 
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Website UI Kit
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              4,500 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-4.jpg" />
+            </div>
+          </a>
 
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Website UI Kit
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              4,500 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-4.jpg" />
+            </div>
+          </a>
 
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Website UI Kit
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              4,500 items
+            </span>
+          </header>
+        </div>
+      </div>
+      <div class="w-full px-1 my-1 md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <div class="overflow-hidden border border-gray-200 rounded-xl">
+          <a href="details.html">
+            <div class="m-4 overflow-hidden rounded-xl">
+              <img alt="Placeholder" class="block w-full h-auto" src="img/categories-4.jpg" />
+            </div>
+          </a>
 
-
-
-
-    <!-- STYLE SWITCHER START -->
-    <div class="style-switcher dark:bg-gray-900">
-      <div class=" day-night s-icon ">
-        <i class="fas dark:text-white"></i>
+          <header class="px-4 mb-4 leading-tight">
+            <h1 class="text-lg">
+              <a class="font-semibold text-black no-underline hover:underline" href="#">
+                Website UI Kit
+              </a>
+            </h1>
+            <span class="block text-sm font-light text-gray-500 no-underline">
+              4,500 items
+            </span>
+          </header>
+        </div>
       </div>
     </div>
-    <!-- STYLE SWITCHER END -->
+  </div>
+  <!-- NEW DESTINATION END -->
 
 
 
-    <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
-    <script src="/src/islands.js"></script>
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script>
+  <script src="/src/islands.js"></script>
 
-  </body>
+</body>
+
 </html>
