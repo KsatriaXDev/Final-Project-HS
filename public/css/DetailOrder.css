@@ -44,6 +44,7 @@ header{
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    font-size: 2rem;
 }
 header .logo{
     font-size: 2rem;
@@ -65,10 +66,9 @@ header .navbar a{
 
                                     /* HOVER NAVBAR 768PX START */
 header .navbar a:hover{
-    color: burlywood;
+    /* color: burlywood; */
 }
 
-                                    /* DETAILS LEBRON 9 REGAL PINK END */
 .heading{
     text-align: center;
     font-size: 3rem;
@@ -80,7 +80,7 @@ header .navbar a:hover{
     padding-bottom: 40px;
 }
 .heading span{
-    color: burlywood;
+    /* color: burlywood; */
 }
 
 header .icons a{
@@ -165,7 +165,7 @@ header .icons a:hover{
 }
 .featured .row .content .price span{
     font-size: 1.5rem;
-    color: burlywood;
+    /* color: burlywood; */
     text-decoration: line-through;
 }
                                         /* DETAILS LEBRON 9 REGAL PINK END  */
@@ -179,7 +179,8 @@ header .icons a:hover{
     font-size: 1.7rem;
     color: #000;
     cursor: pointer;
-    background: burlywood;
+    background: rgb(30 64 175);
+    color: white;
     padding: .8rem 3rem;
     border-radius: none;
 
